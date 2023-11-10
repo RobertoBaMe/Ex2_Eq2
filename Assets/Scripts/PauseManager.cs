@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     private bool gameIsPaused;
-    [SerializeField] private GameObject pauseMenu, winMenu, colorWheel;
+    [SerializeField] private GameObject pauseMenu;
 
     private void Update()
     {
@@ -14,11 +14,6 @@ public class PauseManager : MonoBehaviour
         {
             gameIsPaused = !gameIsPaused;
             PauseGame();
-        }
-
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            WinFuction();
         }
     }
 
@@ -41,10 +36,4 @@ public class PauseManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    private void WinFuction() //Función de victoria
-    {
-        //Time.timeScale = 0;
-        winMenu.SetActive(true);
-        LeanTween.rotateAround(colorWheel, Vector3.forward, -360, 10f).setLoopClamp();
-    }
 }
