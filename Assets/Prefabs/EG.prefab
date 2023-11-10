@@ -93,7 +93,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 163305970304892532}
-  - component: {fileID: 7017440326607640309}
   m_Layer: 0
   m_Name: EG
   m_TagString: Enemy
@@ -117,32 +116,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &7017440326607640309
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163305970304892535}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.011798143, y: -0.03539455}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7050452, y: 1.0707891}
-  m_EdgeRadius: 0
 --- !u!1 &163305970348636317
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +417,7 @@ GameObject:
   - component: {fileID: 163305971604806484}
   - component: {fileID: 163305971604806485}
   - component: {fileID: 163305971604806486}
-  - component: {fileID: 104400432536629632}
+  - component: {fileID: 3213950310231904355}
   m_Layer: 0
   m_Name: EnemyGreen
   m_TagString: Enemy
@@ -557,7 +530,6 @@ MonoBehaviour:
   proyectilePrefab: {fileID: 1628411076434564465, guid: e5c148ef9c0dcfe47b59dabeb35d3377, type: 3}
   PointShoot: {fileID: 163305970538012511}
   TimeBetweenShots: 1
-  ads: {fileID: 0}
 --- !u!82 &163305971604806484
 AudioSource:
   m_ObjectHideFlags: 0
@@ -701,19 +673,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.099645, y: 5.078493}
   m_EdgeRadius: 0
---- !u!70 &104400432536629632
+--- !u!70 &3213950310231904355
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163305971604806474}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000023841858, y: 0.07313031}
-  m_Size: {x: 0.69495726, y: 1.1337394}
+  m_Offset: {x: 0.010192871, y: 0.11891788}
+  m_Size: {x: 0.7839422, y: 1.4770635}
   m_Direction: 0

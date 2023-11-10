@@ -381,12 +381,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1996154275}
-  winPanel: {fileID: 259689995}
-  colorWheel: {fileID: 314778372}
-  winText: {fileID: 1944689781}
-  losePanel: {fileID: 92037649}
-  loseText: {fileID: 1944689781}
-  bloodFrame: {fileID: 531799392}
 --- !u!114 &92037652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,12 +743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1996154275}
-  winPanel: {fileID: 0}
-  colorWheel: {fileID: 314778372}
-  winText: {fileID: 1090252552}
-  losePanel: {fileID: 0}
-  loseText: {fileID: 0}
-  bloodFrame: {fileID: 0}
 --- !u!114 &259689998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,12 +1284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1996154275}
-  winPanel: {fileID: 259689995}
-  colorWheel: {fileID: 314778372}
-  winText: {fileID: 1090252552}
-  losePanel: {fileID: 0}
-  loseText: {fileID: 0}
-  bloodFrame: {fileID: 0}
 --- !u!1 &954616779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,12 +1584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1996154275}
-  winPanel: {fileID: 259689995}
-  colorWheel: {fileID: 314778372}
-  winText: {fileID: 1090252552}
-  losePanel: {fileID: 92037649}
-  loseText: {fileID: 1944689781}
-  bloodFrame: {fileID: 531799392}
 --- !u!4 &1376923015
 Transform:
   m_ObjectHideFlags: 0
@@ -2119,9 +2095,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1996154275}
-  winPanel: {fileID: 0}
-  colorWheel: {fileID: 0}
-  winText: {fileID: 0}
-  losePanel: {fileID: 0}
-  loseText: {fileID: 0}
-  bloodFrame: {fileID: 0}
