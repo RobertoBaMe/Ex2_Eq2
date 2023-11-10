@@ -42,6 +42,15 @@ public class FollowAi : MonoBehaviour
         animEP.isAtack();
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Sword"))
+        {
+            
+            Destroy(gameObject);
+        }
+    }
+
     private void Flip(bool isplayerRight)
     {
         if((isFacingRight && !isplayerRight) || (!isFacingRight && isplayerRight))

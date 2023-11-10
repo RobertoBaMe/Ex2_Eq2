@@ -14,15 +14,15 @@ public class ShootAi : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         ads = GetComponent<AudioSource>();
-        
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             shoot = true;
             StartCoroutine(Shoot());
-            
+
         }
     }
 
@@ -32,6 +32,15 @@ public class ShootAi : MonoBehaviour
         {
             shoot = false;
             StopCoroutine(Shoot());
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.collider.CompareTag("Sword"))
+        {
+            
+            Destroy(gameObject);
         }
     }
     IEnumerator Shoot()
