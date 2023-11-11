@@ -8,12 +8,10 @@ public class ShootAi : MonoBehaviour
     [SerializeField] private GameObject PointShoot;             //Punto de disparo
     [SerializeField] private float TimeBetweenShots;        //Tiempo de disparo o cadencia
     private AudioSource ads;
-    private Animator anim;
     private bool shoot = false;
     private float _timeStart = 0;
     private void Awake()
     {
-        anim = GetComponent<Animator>();
         ads = GetComponent<AudioSource>();
     }
 
@@ -34,7 +32,6 @@ public class ShootAi : MonoBehaviour
                 UnityEngine.Debug.Log("Shoot");
                 ads.Play();
             }
-            //StartCoroutine(Shoot());
         }
         else {
             shoot = false;
@@ -46,14 +43,6 @@ public class ShootAi : MonoBehaviour
         _timeStart -= Time.deltaTime;        
     }
 
-    /*private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            StopCoroutine(Shoot());
-        }
-    }*/
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.collider.CompareTag("Sword"))
@@ -61,13 +50,4 @@ public class ShootAi : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    /*IEnumerator Shoot()
-    {
-        while(shoot)
-        {            
-            Instantiate(proyectilePrefab, PointShoot.transform.position, Quaternion.identity);
-            shoot = false;
-            yield return new WaitForSeconds(TimeBetweenShots);            
-        }
-    }*/
 }

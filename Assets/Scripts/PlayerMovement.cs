@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move(float horizontal) {
         transform.Translate(horizontal * _speed * Time.deltaTime, 0, 0);
-        if (horizontal != 0 && Mathf.Abs(_rb.velocity.y) < 0.001f) _audio.PlayOneShot(1);
+        if (horizontal != 0 && Mathf.Abs(_rb.velocity.y) < 0.001f) _audio.PlaySteps(1);
         if (horizontal > 0 && _spriteRenderer.flipX) _spriteRenderer.flipX = false;
         if (horizontal < 0 && !_spriteRenderer.flipX) _spriteRenderer.flipX = true;
     }

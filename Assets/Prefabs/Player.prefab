@@ -181,11 +181,11 @@ GameObject:
   - component: {fileID: 2990730609332531696}
   m_Layer: 0
   m_Name: sword
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2990730609332531698
 Transform:
   m_ObjectHideFlags: 0
@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 2990730609754767841}
   - component: {fileID: 2990730609754767840}
   - component: {fileID: 2990730609754767847}
+  - component: {fileID: 3109368125224389520}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -378,9 +379,23 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.61815774}
-  m_Size: {x: 0.7129035, y: 1.1350982}
+  m_Offset: {x: 0.0011025369, y: 0.5920491}
+  m_Size: {x: 0.65777856, y: 1.0930331}
   m_Direction: 0
+--- !u!114 &3109368125224389520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2990730609754767842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a708f3064f92ed140afca21c840c92a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lifes: []
+  _panelLost: {fileID: 0}
 --- !u!1 &2990730609790359503
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +500,7 @@ GameObject:
   - component: {fileID: 2990730609854594578}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -674,6 +689,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ca63c493fa01042b3ce0d54813d268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _diamondsText: {fileID: 0}
+  _keyImage: {fileID: 0}
+  _panelWin: {fileID: 0}
 --- !u!114 &2990730609854594590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,6 +722,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 03cf8b33b8593ed47817e8eb30cb05ad, type: 3}
   - {fileID: 8300000, guid: dc75030866ce2cf43ad13a97bf516aa8, type: 3}
   - {fileID: 8300000, guid: 8b9d28a0ddb05fd4a93ff241335124a7, type: 3}
+  - {fileID: 8300000, guid: 6ee6a139cbed80f489d4d0f84b62df13, type: 3}
 --- !u!114 &2990730609854594578
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,6 +13,12 @@ public class PlayerAudio : MonoBehaviour
     }
 
     public void PlayOneShot(int index) {
+        if (_audioSource.isPlaying) _audioSource.Stop();
+        _audioSource.PlayOneShot(_sounds[index]);
+    }
+
+    public void PlaySteps(int index)
+    {
         if (!_audioSource.isPlaying) _audioSource.PlayOneShot(_sounds[index]);
     }
 }
